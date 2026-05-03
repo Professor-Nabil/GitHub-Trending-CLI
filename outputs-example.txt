@@ -1,0 +1,54 @@
+
+🚀 Top 20 Trending GitHub Repositories (Since 2026-04-26):
+
+────────────────────────────────────────────────────────────
+[1] ⭐ nexu-io/open-design (18509 stars)
+    Language:    TypeScript
+    URL:         https://github.com/nexu-io/open-design
+    Description: 🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skill...
+────────────────────────────────────────────────────────────
+[2] ⭐ cursor/cookbook (3254 stars)
+    Language:    TypeScript
+    URL:         https://github.com/cursor/cookbook
+    Description: No description
+────────────────────────────────────────────────────────────
+[3] ⭐ theori-io/copy-fail-CVE-2026-31431 (2994 stars)
+    Language:    Python
+    URL:         https://github.com/theori-io/copy-fail-CVE-2026-31431
+    Description: No description
+────────────────────────────────────────────────────────────
+[4] ⭐ denuitt1/mhr-cfw (1876 stars)
+    Language:    Python
+    URL:         https://github.com/denuitt1/mhr-cfw
+    Description: A Domain-Fronting Relay that routes traffic though GAS (Google Apps Script) and ...
+────────────────────────────────────────────────────────────
+[5] ⭐ willchen96/mike (1576 stars)
+    Language:    TypeScript
+    URL:         https://github.com/willchen96/mike
+    Description: OSS AI Legal Platform...
+────────────────────────────────────────────────────────────
+[6] ⭐ darrylmorley/whatcable (1397 stars)
+    Language:    Swift
+    URL:         https://github.com/darrylmorley/whatcable
+    Description: macOS menu bar app that tells you, in plain English, what each USB-C cable plugg...
+────────────────────────────────────────────────────────────
+[7] ⭐ DanOps-1/Gpt-Agreement-Payment (957 stars)
+    Language:    Python
+    URL:         https://github.com/DanOps-1/Gpt-Agreement-Payment
+    Description: ChatGPT Plus/Team/Pro 订阅协议端到端重放工具集 · hCaptcha 视觉求解器 · 反欺诈机制实证研究 / End-to-end pro...
+────────────────────────────────────────────────────────────
+[8] ⭐ b-nnett/codex-plusplus (853 stars)
+    Language:    TypeScript
+    URL:         https://github.com/b-nnett/codex-plusplus
+    Description: Codex++ tweak system for the Codex desktop app...
+────────────────────────────────────────────────────────────
+[9] ⭐ mattpocock/dictionary-of-ai-coding (818 stars)
+    Language:    TypeScript
+    URL:         https://github.com/mattpocock/dictionary-of-ai-coding
+    Description: AI coding jargon, explained in plain English....
+────────────────────────────────────────────────────────────
+[10] ⭐ wrongly-cuddly-obsession/NTSB_FOIA_MU5735 (789 stars)
+    Language:    N/A
+    URL:         https://github.com/wrongly-cuddly-obsession/NTSB_FOIA_MU5735
+    Description: No description
+────────────────────────────────────────────────────────────

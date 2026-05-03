@@ -21,20 +21,19 @@ program
 
     try {
       const repos = await fetchTrendingRepos(duration, parseInt(limit, 10));
-      console.log(`\n${chalk.bgBlue.white.bold(' 🚀 GitHub Trending Repositories ')}`);
-      console.log(chalk.gray(`Duration: ${duration} | Limit: ${limit}\n`));
+      const date = new Date();
+      date.setDate(date.getDate() - (duration === 'day' ? 1 : duration === 'week' ? 7 : duration === 'month' ? 30 : 365));
+      
+      console.log(chalk.bold.blue(`\n🚀 Top ${repos.length} Trending GitHub Repositories (Since ${date.toISOString().split('T')[0]}):\n`));
       
       repos.forEach((repo, index) => {
-        console.log(chalk.dim('─'.repeat(50)));
-        console.log(`${chalk.yellow(index + 1)}. ${chalk.bold.green(repo.name)}`);
-        console.log(chalk.white(repo.description || 'No description available.'));
-        console.log(
-          `${chalk.yellow('★')} ${repo.stargazers_count.toLocaleString()} ` +
-          `${chalk.dim('•')} ${chalk.cyan(repo.language || 'Unknown')}`
-        );
-        console.log(chalk.blue.underline(repo.html_url));
+        console.log(chalk.gray('────────────────────────────────────────────────────────────'));
+        console.log(`[${index + 1}] ${chalk.yellow('⭐')} ${chalk.bold.white(`${repo.name}`)} ${chalk.dim(`(${repo.stargazers_count.toLocaleString()} stars)`)}`);
+        console.log(`    ${chalk.cyan('Language:')}    ${repo.language || 'N/A'}`);
+        console.log(`    ${chalk.cyan('URL:')}         ${chalk.underline(repo.html_url)}`);
+        console.log(`    ${chalk.cyan('Description:')} ${(repo.description || 'No description').substring(0, 80)}${repo.description && repo.description.length > 80 ? '...' : ''}`);
       });
-      console.log(chalk.dim('─'.repeat(50)) + '\n');
+      console.log(chalk.gray('────────────────────────────────────────────────────────────\n'));
     } catch (error) {
       console.error(chalk.red('Error fetching data:'), error instanceof Error ? error.message : error);
     }
