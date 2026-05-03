@@ -21,14 +21,20 @@ program
 
     try {
       const repos = await fetchTrendingRepos(duration, parseInt(limit, 10));
-      console.log(chalk.blue(`Found ${repos.length} trending repositories from the last ${duration}:`));
+      console.log(`\n${chalk.bgBlue.white.bold(' 🚀 GitHub Trending Repositories ')}`);
+      console.log(chalk.gray(`Duration: ${duration} | Limit: ${limit}\n`));
       
       repos.forEach((repo, index) => {
-        console.log(`\n${index + 1}. ${chalk.bold.green(repo.name)}`);
-        console.log(`   ${repo.description || 'No description'}`);
-        console.log(`   ${chalk.yellow('★')} ${repo.stargazers_count} | ${chalk.cyan(repo.language || 'N/A')}`);
-        console.log(`   ${chalk.underline(repo.html_url)}`);
+        console.log(chalk.dim('─'.repeat(50)));
+        console.log(`${chalk.yellow(index + 1)}. ${chalk.bold.green(repo.name)}`);
+        console.log(chalk.white(repo.description || 'No description available.'));
+        console.log(
+          `${chalk.yellow('★')} ${repo.stargazers_count.toLocaleString()} ` +
+          `${chalk.dim('•')} ${chalk.cyan(repo.language || 'Unknown')}`
+        );
+        console.log(chalk.blue.underline(repo.html_url));
       });
+      console.log(chalk.dim('─'.repeat(50)) + '\n');
     } catch (error) {
       console.error(chalk.red('Error fetching data:'), error instanceof Error ? error.message : error);
     }
