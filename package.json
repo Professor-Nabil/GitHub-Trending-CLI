@@ -1,0 +1,31 @@
+{
+  "name": "github-trending-cli",
+  "version": "1.0.0",
+  "description": "CLI tool to fetch trending repositories from GitHub",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-tester:Professor-Nabil/GitHub-Trending-CLI.git"
+  },
+  "keywords": [
+    "github",
+    "trending",
+    "cli"
+  ],
+  "author": "Nabil",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
