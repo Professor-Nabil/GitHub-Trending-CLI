@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "CLI tool to fetch trending repositories from GitHub",
   "main": "dist/index.js",
+  "bin": {
+    "trending-repos": "dist/index.js"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",

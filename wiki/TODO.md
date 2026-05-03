@@ -7,4 +7,4 @@
 - [x] Implement sorting by star count
 - [x] Implement display formatting (name, description, stars, language)
 - [x] Implement error handling
-- [ ] Finalize CLI entry point and documentation
+- [x] Finalize CLI entry point and documentation
